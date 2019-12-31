@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;">
+    <title>Generate single certificate</title>
+    <link defer rel="stylesheet" defer
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha256-azvvU9xKluwHFJ0Cpgtf0CYzK7zgtOznnzxV4924X1w=" crossorigin="anonymous" />
+    <link defer rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id='form'>
+            <div class="row form-group">
+                <label class="col-5 " for="inputSName">Enter student name</label>
+                <div class="col-1"></div>
+                <input class="col-4 form-control" id="inputSName" pattern="^([a-z,A-Z,\s]{1,20}$)" maxlength="20"
+                    type="text" required placeholder="Pupil name"
+                    style="border-width: 3px; border-color: dimgray; border: dashed;">
+            </div>
+            <div class="row form-group">
+                <label class="col-5 col-form-label" for="inputColName">Enter College name</label>
+                <div class="col-1"></div>
+                <input class="col-4 form-control" pattern="^([a-z,A-Z,\s]{1,50}$)" id="inputColName" type="text"
+                    required placeholder='College Name'
+                    style="border-width: 3px; border-color: dimgray; border: dashed;">
+            </div>
+            <div class="row form-group">
+                <label class="col-5 col-form-label" for="inputCampName">Enter name for campaign</label>
+                <div class="col-1"></div>
+                <input class="col-4 form-control" pattern="^([a-z,A-Z,0-9,\s]{1,20}$)" id="inputCampName"
+                    placeholder="Campaign name" type="text" required
+                    style="border-width: 3px; border-color: dimgray; border: dashed;">
+            </div>
+            <div class="row form-group">
+                <label class="col-5 col-form-label" for="inputCmnt">Enter any comments if required</label>
+                <div class="col-1"></div>
+                <input class="col-4 form-control" id="inputCmnt" type="text" placeholder="Comments"
+                    style="border-width: 3px; border-color: dimgray; border: dashed;">
+            </div>
+        </form>
+        <button type="submit" id="submitBtn" class="btn btn-primary col-2" onclick="submit()">Submit</button>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha256-63ld7aiYP6UxBifJWEzz87ldJyVnETUABZAYs5Qcsmc=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"
+        integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+    <script defer src="./js/main.js"></script>
+</body>
+
+</html>

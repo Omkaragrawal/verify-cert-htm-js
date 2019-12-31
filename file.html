@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;">
+    <title>Mutiple Data Upload</title>
+</head>
+
+<body>
+    <form enctype="multipart/form-data" method="POST">
+        <input type="file" id="xlsxUpload" name="xlsxUpload" accept="xlsx" value="Select the excel file"></input>
+        <input type="submit" value="Upload xlsx" />
+    </form>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"
+        integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+    <script defer src="/js/mfu.js" type="text/javascript"></script>
+</body>
+
+</html>
